@@ -1,6 +1,7 @@
-import { AfterViewInit, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AboutComponent } from '../about/about.component';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ export class AppComponent {
 
 
   constructor(
+    public sanitizer : DomSanitizer
   ) { }
 
   // Обработчик движения мыши
@@ -44,5 +46,9 @@ export class AppComponent {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }
-}
 
+  getUrl(post : string)
+  {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(post);
+  }
+}
