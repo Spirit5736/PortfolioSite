@@ -40,12 +40,12 @@ export class AppComponent {
   //   }
   // }
 
-  scrollToSection(sectionId: string): void {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
+  // scrollToSection(sectionId: string): void {
+  //   const element = document.getElementById(sectionId);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // }
 
   getUrl(post : string)
   {
