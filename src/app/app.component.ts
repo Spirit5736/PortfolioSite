@@ -11,7 +11,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  @HostListener('document:mousemove', ['$event'])
+ // @HostListener('document:mousemove', ['$event'])
   title = 'PortfolioSite';
 
 
