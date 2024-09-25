@@ -12,7 +12,7 @@ export class TestPf2Component {
 
   constructor(private sanitizer: DomSanitizer) {
     const params = new URLSearchParams({
-      id: "88DA35F7A501409B9522CBD6D8B4B706",
+      id: "AKocvsNvWq",
       type: 'Car',
       identifier: 'GY20NYU',
       identifierType: 'Vrm',
